@@ -1,6 +1,5 @@
-#Developer
-
-
+>Developer
+> 
 ![C#](https://img.shields.io/badge/-cSharp-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Unity](https://img.shields.io/badge/-unity-e70173?style=for-the-badge&logo=unity&logoColor=white)
  ___
@@ -17,7 +16,7 @@ ___
 LastProjects
 ```
 [![1](https://img.shields.io/badge/-1-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Theif)
-[![1](https://img.shields.io/badge/-GooglePlay-fb8f53?style=for-the-badge&logo=GooglePlay)](https://github.com/Kelkhaun/Theif)
+[![1](https://img.shields.io/badge/-GooglePlay-fb8f53?style=for-the-badge&logo=GooglePlay)](https://play.google.com/store/apps/details?id=com.org.Agava.Theif&hl=ru&gl=US)
 
 [![2](https://img.shields.io/badge/-2-b0032b?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Egypt-Builder)
 [![2](https://img.shields.io/badge/-GooglePlay-b0032b?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=org.Agava.EgyptBuild)
