@@ -28,3 +28,5 @@ LastProjects
 [![6](https://img.shields.io/badge/-6-f90059?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/DogRunner)
 [![7](https://img.shields.io/badge/-7-6b006f?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/ThrowingKnives)
 ---
+
+![Waluigi](https://octodex.github.com/images/spidertocat.png)
