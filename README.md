@@ -7,4 +7,5 @@
 
 
 ### Проекты![image](https://user-images.githubusercontent.com/66969434/204575607-5786149e-2bfd-4f29-8fd7-d13a5b68d120.png)
+[image](https://ibb.co/2PPV1jT)
 /amo/rating/:addonId
