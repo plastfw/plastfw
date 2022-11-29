@@ -8,8 +8,7 @@
 Contacts
 ```
 [![1](https://img.shields.io/badge/-Telegram-fb8f53?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/plastfw) 
-[![1](https://img.shields.io/badge/-Gmail-fc8043?style=for-the-badge&logo=gmail&logoColor=white)](ibanaski24@gmail.com)
-[![1](https://img.shields.io/badge/-Discord-b0032b?style=for-the-badge&logo=discord&logoColor=white)](IBANASKI#2117)
+[![1](https://img.shields.io/badge/-Discord-b0032b?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/226703052638388224)
 
 ___
 ```
