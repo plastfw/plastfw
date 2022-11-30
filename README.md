@@ -27,7 +27,5 @@ Contacts
 [![1](https://img.shields.io/badge/-Discord-b0032b?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/226703052638388224)
 
 ___
-[![7](https://img.shields.io/badge/-7-6b006f?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/ThrowingKnives)
----
 
 ![Waluigi](https://octodex.github.com/images/spidertocat.png)
