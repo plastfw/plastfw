@@ -17,7 +17,7 @@ LastProjects
 [![3](https://img.shields.io/badge/-3-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Theif)
 [![3](https://img.shields.io/badge/-preview-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=com.org.Agava.Theif&hl=ru&gl=US)
 
-[![4](https://img.shields.io/badge/-4-b0032b?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Egypt-Builder)
+[![4](https://img.shields.io/badge/-4-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Egypt-Builder)
 [![4](https://img.shields.io/badge/-preview-b0032b?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=org.Agava.EgyptBuild)
 
 [![5](https://img.shields.io/badge/-5-fc8043?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Obstacle-Course)
