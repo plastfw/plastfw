@@ -8,7 +8,7 @@
 LastProjects
 ```
 
-[![1](https://img.shields.io/badge/-1-fb8f53?style=for-the-badge&logo=git&logoColor=white)
+![1](https://img.shields.io/badge/-1-fb8f53?style=for-the-badge&logo=git&logoColor=white)
 [![2](https://img.shields.io/badge/-preview-fb8f53?style=for-the-badge&logo=GooglePlay)](https://yandex.ru/games/app/206662?draft=true&lang=ru)
 
 [![2](https://img.shields.io/badge/-2-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RomanSharipov/Toilet-rush)
