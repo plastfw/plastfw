@@ -7,7 +7,7 @@
 ```
 LastProjects
 ```
-[![1](https://img.shields.io/badge/-1-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Theif)
+[![1](https://img.shields.io/badge/-1-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RomanSharipov/Toilet-rush)
 [![1](https://img.shields.io/badge/-Yandex-fb8f53?style=for-the-badge&logo=Yandex)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 
 [![2](https://img.shields.io/badge/-1-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Theif)
