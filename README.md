@@ -13,7 +13,7 @@ LastProjects
 [![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Toilet-Run)
 [![2](https://img.shields.io/badge/-play-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 
-[![3](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Theif)
+[![3](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Thief)
 [![3](https://img.shields.io/badge/-play-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=com.org.Agava.Theif&hl=ru&gl=US)
 
 [![4](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Kelkhaun/Egypt-Builder)
