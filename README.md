@@ -9,16 +9,16 @@ LastProjects
 ```
 
 [![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/21-Solitaire)
-[![2](https://img.shields.io/badge/-Play Solitaire-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/206662?draft=true&lang=ru)
+[![2](https://img.shields.io/badge/-Play-Solitaire-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/206662?draft=true&lang=ru)
 
 [![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Toilet-Run)
-[![2](https://img.shields.io/badge/-Play ToiletRun-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
+[![2](https://img.shields.io/badge/-Play-ToiletRun-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 
 [![3](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Thief)
-[![3](https://img.shields.io/badge/-Play Theif-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=com.org.Agava.Theif&hl=ru&gl=US)
+[![3](https://img.shields.io/badge/-Play-Theif-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=com.org.Agava.Theif&hl=ru&gl=US)
 
 [![4](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Builder-Egypt)
-[![4](https://img.shields.io/badge/-Play Builder-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=org.Agava.EgyptBuild)
+[![4](https://img.shields.io/badge/-Play-Builder-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=org.Agava.EgyptBuild)
 
 ```
 Unreleased
