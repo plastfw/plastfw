@@ -8,6 +8,7 @@
 LastProjects
 ```
 
+[![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/21-Solitaire)
 [![2](https://img.shields.io/badge/-play-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/206662?draft=true&lang=ru)
 
 [![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Toilet-Run)
