@@ -17,9 +17,6 @@ LastProjects
 [![3](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Thief)
 [![3](https://img.shields.io/badge/-PlayTheif-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=com.org.Agava.Theif&hl=ru&gl=US)
 
-[![4](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Builder-Egypt)
-[![4](https://img.shields.io/badge/-PlayBuilder-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://play.google.com/store/apps/details?id=org.Agava.EgyptBuild)
-
 ```
 Unreleased
 ```
