@@ -3,9 +3,9 @@
 ![C#](https://img.shields.io/badge/-cSharp-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Unity](https://img.shields.io/badge/-unity-e70173?style=for-the-badge&logo=unity&logoColor=white)
  ___
-!(https://img.shields.io/badge/-DoTween-6b006f?style=for-the-badge&logo=git&logoColor=white)
-!](https://img.shields.io/badge/-Cinemachine-6b006f?style=for-the-badge&logo=git&logoColor=white)
-!(https://img.shields.io/badge/--6b006f?style=for-the-badge&logo=git&logoColor=white)
+![1](https://img.shields.io/badge/-DoTween-6b006f?style=for-the-badge&logo=git&logoColor=white)
+![2](https://img.shields.io/badge/-Cinemachine-6b006f?style=for-the-badge&logo=git&logoColor=white)
+![3](https://img.shields.io/badge/--6b006f?style=for-the-badge&logo=git&logoColor=white)
 
 ```
 LastProjects
