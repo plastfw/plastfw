@@ -21,8 +21,8 @@ I am a 25 year old Unity developer from Russia.
 
 ### :office: Experience
 
-##Duration  - 9️⃣ months
-##[AGAVA](https://agava.tech/)
+## Duration  - 9️⃣ months
+## [AGAVA](https://agava.tech/)
 
 <dl>
   <dt>Description</dt>
