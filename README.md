@@ -6,7 +6,20 @@
 ![exp](https://img.shields.io/badge/-OneYaerExperience-e70173?style=for-the-badge&logo=unity&logoColor=white)
  ___
  
-### 🔎: About Me :
+### 🔎 About Me 
+I am a 25 year old Unity developer from Russia.
+
+- :coin:
+
+- 🎮: I'am developing casual - hypercasual games
+
+- 👯: I have experience working in a team
+
+- 📫:How to reach me: [![Telegram](https://img.shields.io/badge/-plastfw-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/plastfw)
+
+---
+
+### ::coin:: : Experienc :
 I am a 25 year old Unity developer from Russia.
 
 - 🎮: I'am developing casual - hypercasual games
