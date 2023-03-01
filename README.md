@@ -35,9 +35,11 @@ I am a 25 year old Unity developer from Russia.
 - Prototyping
 - Implementation of analytics and SDK
 - Setting up Animations
+- VFX
 - Drawing and optimization ui
-
-
+- Optimization
+- Saves
+- Code Review
 ---
   
 ```
