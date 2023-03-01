@@ -7,12 +7,9 @@
  ___
  
 ### 🔎: About Me :
-I am a Full Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from India.
-- :telescope: I’m working as a Software Engineer and contributing to frontend and backend for building web applications.
+I am a 25 year old Unity developer from Russia.
 
-- :seedling: Exploring Technical Content Writing.
-
-- :zap: In my free time, I solve problems on GeeksforGeeks and read tech articles.
+- 🎮: I'am developing casual - hypercasual games
 
 - 📫:How to reach me: [![Telegram](https://img.shields.io/badge/-plastfw-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/plastfw)
 
@@ -47,15 +44,5 @@ Unreleased
 [![8](https://img.shields.io/badge/-code-e70173?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Producer)
 [![9](https://img.shields.io/badge/-code-f90059?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/DogRunner)
 [![10](https://img.shields.io/badge/-code-6b006f?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/ThrowingKnives)
-
-
-
-```
-Contacts
-```
-[![1](https://img.shields.io/badge/-Telegram-fb8f53?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/plastfw) 
-[![1](https://img.shields.io/badge/-Discord-b0032b?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/226703052638388224)
-
-___
 
 ![Waluigi](https://octodex.github.com/images/spidertocat.png)
