@@ -9,7 +9,7 @@
 ### 🔎 About Me 
 I am a 25 year old Unity developer from Russia.
 
-- :rage1: Tarkhanov Daniil Nikolaevich
+- :rage1: Tarkhanov Daniil
 
 - 🎮: I'am developing casual - hypercasual games
 
