@@ -2,8 +2,13 @@
 > 
 ![C#](https://img.shields.io/badge/-cSharp-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Unity](https://img.shields.io/badge/-unity-e70173?style=for-the-badge&logo=unity&logoColor=white)
+
 ![exp](https://img.shields.io/badge/-OneYaerExperience-e70173?style=for-the-badge&logo=unity&logoColor=white)
  ___
+  
+```
+Skills
+```
 ![0](https://img.shields.io/badge/-OOP-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![1](https://img.shields.io/badge/-DoTween-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![2](https://img.shields.io/badge/-Cinemachine-6b006f?style=for-the-badge&logo=git&logoColor=white)
