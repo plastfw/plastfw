@@ -21,14 +21,16 @@ I am a 25 year old Unity developer from Russia.
 
 ### :office: Experience
 
-[AGAVA](https://agava.tech/)
+##Duration  - 9️⃣ months
+##[AGAVA](https://agava.tech/)
 
 <dl>
-  <dt>Описании студии</dt>
-  <dd>Это то, что люди иногда используют.</dd>
+  <dt>Description</dt>
+  <dd>Number of employees ~ 50-60</dd>
+  <dd>Direction - game development for android and web / Playable Ads</dd>
 
-  <dt>Markdown внутри HTML</dt>
-  <dd>Работает *не очень** хорошо. Используйте HTML-<em>теги</em>.</dd>
+  <dt>My tasks</dt>
+  <dd></dd>
 </dl>
 
 ---
