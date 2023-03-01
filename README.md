@@ -21,16 +21,19 @@ I am a 25 year old Unity developer from Russia.
 
 ### :office: Experience
 
-#### Duration  - 9️⃣ months
-#### [AGAVA](https://agava.tech/)
+##### Duration  - 9️⃣ months
+##### [AGAVA](https://agava.tech/)
 
 <dl>
   <dt>Description</dt>
-  <dd>Number of employees ~ 50-60</dd>
-  <dd>Direction - game development for android and web / Playable Ads</dd>
+  <dd>*Number of employees ~ 50-60</dd>
+  <dd>*Direction - game development for android and web / Playable Ads</dd>
 
   <dt>My tasks</dt>
-  <dd></dd>
+  <dd>*Prototyping</dd>
+  <dd>*Implementation of analytics and SDK</dd>
+  <dd>*Setting up Animations</dd>
+  <dd>drawing and optimization ui</dd>
 </dl>
 
 ---
