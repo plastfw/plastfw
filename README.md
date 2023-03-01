@@ -21,7 +21,15 @@ I am a 25 year old Unity developer from Russia.
 
 ### :office: Experience
 
-[0](https://img.shields.io/badge/-AGAWA-6b006f?style=for-the-badge)(https://agava.tech/)
+[AGAVA](https://agava.tech/)
+
+<dl>
+  <dt>Описании студии</dt>
+  <dd>Это то, что люди иногда используют.</dd>
+
+  <dt>Markdown внутри HTML</dt>
+  <dd>Работает *не очень** хорошо. Используйте HTML-<em>теги</em>.</dd>
+</dl>
 
 ---
   
