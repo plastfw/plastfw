@@ -3,7 +3,7 @@
 ![C#](https://img.shields.io/badge/-cSharp-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Unity](https://img.shields.io/badge/-unity-e70173?style=for-the-badge&logo=unity&logoColor=white)
  ___
- ![DoTween](https://img.shields.io/badge/-cSharp-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
+ ![DoTween](https://img.shields.io/badge/-DoTween-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
 
 ```
 LastProjects
