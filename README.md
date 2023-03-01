@@ -31,7 +31,8 @@ Stack
 ![6](https://img.shields.io/badge/-SDK-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![7](https://img.shields.io/badge/-SOLID-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![8](https://img.shields.io/badge/-AdobeIllustrator-6b006f?style=for-the-badge&logo=git&logoColor=white)
----
+
+___
 
 ### :office: Experience
 
