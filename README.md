@@ -9,7 +9,7 @@
 ### 🔎 About Me 
 I am a 25 year old Unity developer from Russia.
 
-- :coin:
+- :rage1: Tarkhanov Daniil Nikolaevich
 
 - 🎮: I'am developing casual - hypercasual games
 
@@ -19,19 +19,14 @@ I am a 25 year old Unity developer from Russia.
 
 ---
 
-### ::coin:: : Experienc :
-I am a 25 year old Unity developer from Russia.
+### :office: Experience
 
-- 🎮: I'am developing casual - hypercasual games
-
-- 👯: I have experience working in a team
-
-- 📫:How to reach me: [![Telegram](https://img.shields.io/badge/-plastfw-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/plastfw)
+[0](https://img.shields.io/badge/-AGAWA-6b006f?style=for-the-badge)(https://agava.tech/)
 
 ---
   
 ```
-Skills
+Stack
 ```
 ![0](https://img.shields.io/badge/-OOP-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![1](https://img.shields.io/badge/-DoTween-6b006f?style=for-the-badge&logo=git&logoColor=white)
