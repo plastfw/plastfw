@@ -30,7 +30,8 @@ Stack
 ![5](https://img.shields.io/badge/-GameAnalytics-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![6](https://img.shields.io/badge/-SDK-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![7](https://img.shields.io/badge/-SOLID-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![8](https://img.shields.io/badge/-AdobeIllustrator-6b006f?style=for-the-badge&logo=git&logoColor=white)
+![8](https://img.shields.io/badge/-Zenject-6b006f?style=for-the-badge&logo=git&logoColor=white)
+![9](https://img.shields.io/badge/-AdobeIllustrator-6b006f?style=for-the-badge&logo=git&logoColor=white)
 
 ___
 
