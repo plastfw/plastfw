@@ -21,15 +21,15 @@ I am a 25 year old Unity developer from Russia.
 Stack
 ```
 ![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
-![1](https://img.shields.io/badge/-DoTween-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![2](https://img.shields.io/badge/-Cinemachine-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![3](https://img.shields.io/badge/-LINQ-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![4](https://img.shields.io/badge/-RayFire-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![5](https://img.shields.io/badge/-GameAnalytics-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![6](https://img.shields.io/badge/-SDK-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![7](https://img.shields.io/badge/-SOLID-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![8](https://img.shields.io/badge/-Zenject-6b006f?style=for-the-badge&logo=git&logoColor=white)
-![9](https://img.shields.io/badge/-AdobeIllustrator-6b006f?style=for-the-badge&logo=git&logoColor=white)
+![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
+![2](https://img.shields.io/badge/-Cinemachine-orange?style=for-the-badge&logo=git&logoColor=white)
+![3](https://img.shields.io/badge/-LINQ-orange?style=for-the-badge&logo=git&logoColor=white)
+![4](https://img.shields.io/badge/-RayFire-orange?style=for-the-badge&logo=git&logoColor=white)
+![5](https://img.shields.io/badge/-GameAnalytics-orange?style=for-the-badge&logo=git&logoColor=white)
+![6](https://img.shields.io/badge/-SDK-orange?style=for-the-badge&logo=git&logoColor=white)
+![7](https://img.shields.io/badge/-SOLID-orange?style=for-the-badge&logo=git&logoColor=white)
+![8](https://img.shields.io/badge/-Zenject-orange?style=for-the-badge&logo=git&logoColor=white)
+![9](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
 
 ___
 
