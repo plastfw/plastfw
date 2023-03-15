@@ -13,7 +13,7 @@ I am a 25 year old Unity developer from Russia.
 
 - 🎮: I'am developing casual - hypercasual games
 
-- 🧠:  I'm learning Burst, Jobs, MorpehECS
+- 🧠: Now I'm studying Burst, Jobs, MorpehECS
 
 - 👯: I have experience working in a team
 
