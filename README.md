@@ -20,7 +20,7 @@ I am a 25 year old Unity developer from Russia.
 ```
 Stack
 ```
-![0](https://img.shields.io/badge/-OOP-6b006f?style=for-the-badge&logo=git&logoColor=yellow)
+![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
 ![1](https://img.shields.io/badge/-DoTween-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![2](https://img.shields.io/badge/-Cinemachine-6b006f?style=for-the-badge&logo=git&logoColor=white)
 ![3](https://img.shields.io/badge/-LINQ-6b006f?style=for-the-badge&logo=git&logoColor=white)
