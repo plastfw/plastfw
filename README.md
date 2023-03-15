@@ -1,11 +1,3 @@
->Developer
-> 
-![C#](https://img.shields.io/badge/-cSharp-e81c51?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Unity](https://img.shields.io/badge/-unity-e70173?style=for-the-badge&logo=unity&logoColor=white)
-
-![exp](https://img.shields.io/badge/-OneYearExperience-e70173?style=for-the-badge&logo=unity&logoColor=white)
- ___
- 
 ### 🔎 About Me 
 I am a 25 year old Unity developer from Russia.
 
