@@ -35,7 +35,7 @@ ___
 
 ### :office: Experience
 
-#### Duration  - 2️⃣: years
+#### Duration  - 2️⃣ years
 #### [AGAVA](https://agava.tech/)
 
 
