@@ -31,7 +31,8 @@ Stack
 ![6](https://img.shields.io/badge/-SDK-orange?style=for-the-badge&logo=git&logoColor=white)
 ![7](https://img.shields.io/badge/-SOLID-orange?style=for-the-badge&logo=git&logoColor=white)
 ![8](https://img.shields.io/badge/-Zenject-orange?style=for-the-badge&logo=git&logoColor=white)
-![9](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
+![9](https://img.shields.io/badge/-Burst-orange?style=for-the-badge&logo=git&logoColor=white)
+![10](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
 ___
 ```
 Last Projects
