@@ -7,6 +7,8 @@ UnityDeveloper
 ### 🔎 About Me 
 I am a 25 year old Unity developer from Russia.
 
+- :office: Experience 2️⃣ years
+
 - :rage1: I'am developing casual - hypercasual games
 
 - 🧠: I'm learning Burst, Jobs, MorpehECS, LeoECSLite
@@ -30,32 +32,7 @@ Stack
 ![7](https://img.shields.io/badge/-SOLID-orange?style=for-the-badge&logo=git&logoColor=white)
 ![8](https://img.shields.io/badge/-Zenject-orange?style=for-the-badge&logo=git&logoColor=white)
 ![9](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
-
 ___
-
-### :office: Experience
-
-#### Duration  - 2️⃣ years
-#### [AGAVA](https://agava.tech/)
-
-
-### Description
-
-- Number of employees ~ 50-60
-
-- Direction - game development for android and web / Playable Ads
-
-### My tasks
-- Prototyping
-- Implementation of analytics and SDK
-- Setting up Animations
-- VFX
-- Drawing and optimization ui
-- Optimization
-- Saves
-- Code Review
----
-  
 ```
 Last Projects
 ```
