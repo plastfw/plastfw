@@ -9,7 +9,7 @@ I am a 25 year old Unity developer from Russia.
 
 - :office: Experience 2️⃣ years
 
-- :rage1: I'm developing casual games
+- :rage1: I'm developing games for android/web
 
 - 🧠: I'm learning Burst, Jobs, MorpehECS, LeoECSLite
 
