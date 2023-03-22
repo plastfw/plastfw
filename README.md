@@ -34,7 +34,7 @@ Stack
 ![10](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
 ___
 ```
-Last Projects
+Last Project
 ```
 [![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Toilet-Run)
 [![2](https://img.shields.io/badge/-TapToPlay-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
