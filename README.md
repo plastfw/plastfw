@@ -36,8 +36,6 @@ ___
 ```
 Last Projects
 ```
-[![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/A-mazingTest/tree/main/Assets/Source)
-
 [![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Toilet-Run)
 [![2](https://img.shields.io/badge/-TapToPlay-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 
