@@ -11,7 +11,7 @@ I am a 25 year old Unity developer from Russia.
 
 - :rage1: I'm developing games for android/web
 
-- 🧠: I'm learning Burst, Jobs, MorpehECS, LeoECSLite
+- 🧠: I'm learning HLSL, Burst, Jobs, MorpehECS, LeoECSLite
 
 - 👯: I have experience working in a team
 
