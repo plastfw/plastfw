@@ -44,21 +44,7 @@
 -  Git
 -  Jira
 
-
-![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
-![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
-![2](https://img.shields.io/badge/-Cinemachine-orange?style=for-the-badge&logo=git&logoColor=white)
-![3](https://img.shields.io/badge/-LINQ-orange?style=for-the-badge&logo=git&logoColor=white)
-![4](https://img.shields.io/badge/-RayFire-orange?style=for-the-badge&logo=git&logoColor=white)
-![5](https://img.shields.io/badge/-GameAnalytics-orange?style=for-the-badge&logo=git&logoColor=white)
-![6](https://img.shields.io/badge/-SDK-orange?style=for-the-badge&logo=git&logoColor=white)
-![7](https://img.shields.io/badge/-SOLID-orange?style=for-the-badge&logo=git&logoColor=white)
-![8](https://img.shields.io/badge/-Zenject-orange?style=for-the-badge&logo=git&logoColor=white)
-![10](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
-___
-```
-Last Projects
-```
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=1000&color=D9F771&repeat=false&width=435&lines=LastProjects)](https://git.io/typing-svg)
 [![2](https://img.shields.io/badge/-ToiletRush-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 [![2](https://img.shields.io/badge/-ShootingRange-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://www.crazygames.com/game/the-range-3d)
 
