@@ -14,9 +14,8 @@
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 ---
 
-```
-Skills
-```
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Stack)](https://git.io/typing-svg)
+
 ![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
 ![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
 ![2](https://img.shields.io/badge/-Cinemachine-orange?style=for-the-badge&logo=git&logoColor=white)
