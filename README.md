@@ -46,7 +46,7 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=1000&color=D9F771&repeat=false&width=435&lines=LastProjects)](https://git.io/typing-svg)
 
-[![2](https://img.shields.io/badge/-ToiletRush-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
+![![2](https://img.shields.io/badge/-ToiletRush-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 [![2](https://img.shields.io/badge/-ShootingRange-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://www.crazygames.com/game/the-range-3d)
 
 ![Waluigi](https://octodex.github.com/images/spidertocat.png)
