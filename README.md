@@ -14,7 +14,7 @@
 ---
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=500&color=D9F771&repeat=false&width=435&lines=Unity)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=2000&color=D9F771&repeat=false&width=435&lines=Unity)](https://git.io/typing-svg)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=1000&color=D9F771&repeat=false&width=435&lines=Code)](https://git.io/typing-svg)
 
