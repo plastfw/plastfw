@@ -30,7 +30,7 @@ ___
 ```
 Last Project
 ```
-[![2](https://img.shields.io/badge/-code-fb8f53?style=for-the-badge&logo=git&logoColor=white)](https://github.com/plastfw/Toilet-Run)
-[![2](https://img.shields.io/badge/-TapToPlay-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
+[![2](https://img.shields.io/badge/-ToiletRush-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
+[![2](https://img.shields.io/badge/-ShootingRange-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://www.crazygames.com/game/the-range-3d)
 
 ![Waluigi](https://octodex.github.com/images/spidertocat.png)
