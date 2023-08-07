@@ -16,10 +16,10 @@
 ```
 Stack
 ```
-#![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
-![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
-![2](https://img.shields.io/badge/-Cinemachine-orange?style=for-the-badge&logo=git&logoColor=white)
-![3](https://img.shields.io/badge/-LINQ-orange?style=for-the-badge&logo=git&logoColor=white)
+-![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
+-![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
+-![2](https://img.shields.io/badge/-Cinemachine-orange?style=for-the-badge&logo=git&logoColor=white)
+-![3](https://img.shields.io/badge/-LINQ-orange?style=for-the-badge&logo=git&logoColor=white)
 ![4](https://img.shields.io/badge/-RayFire-orange?style=for-the-badge&logo=git&logoColor=white)
 ![5](https://img.shields.io/badge/-GameAnalytics-orange?style=for-the-badge&logo=git&logoColor=white)
 ![6](https://img.shields.io/badge/-SDK-orange?style=for-the-badge&logo=git&logoColor=white)
