@@ -37,7 +37,6 @@
 -  DI(Zenject)
 -  Design Patterns
 -  LINQ
--  HLSL
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Other)](https://git.io/typing-svg)
 -  Adobe Illustrator
