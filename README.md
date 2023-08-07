@@ -16,9 +16,15 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Unity)](https://git.io/typing-svg)
 
+-  I have experience working in a team
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Code)](https://git.io/typing-svg)
 
+
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Other)](https://git.io/typing-svg)
+
+
 
 ![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
 ![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
