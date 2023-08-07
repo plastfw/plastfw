@@ -15,15 +15,34 @@
 
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Unity)](https://git.io/typing-svg)
-
--  I have experience working in a team
+-  UnityEngine
+-  Animation
+-  SDK
+-  Custom UI
+-  Physycs 2D n 3D
+-  Vector Math
+-  Build size optimization
+-  RAM optimization
+-  Particle System
+-  DoTween
+-  Cinemachine
+-  RayFire
+-  Spline
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Code)](https://git.io/typing-svg)
-
-
+-  C#
+-  OOP
+-  SOLID
+-  Cleane Code
+-  DI(Zenject)
+-  Design Patterns
+-  LINQ
+-  HLSL
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&pause=3000&color=D9F771&repeat=false&width=435&lines=Other)](https://git.io/typing-svg)
-
+-  Adobe Illustrator
+-  Git
+-  Jira
 
 
 ![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
