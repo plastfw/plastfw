@@ -11,7 +11,6 @@
 
 - 📫:How to reach me: [![Telegram](https://img.shields.io/badge/-plastfw-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/plastfw)
 
-![Jokes Card](https://readme-jokes.vercel.app/api)
 ---
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Stack)](https://git.io/typing-svg)
