@@ -19,7 +19,7 @@
 -  Animation
 -  SDK
 -  Custom UI
--  Physycs 2D n 3D
+-  Physics 2D & 3D
 -  Vector Math
 -  Build size optimization
 -  RAM optimization
