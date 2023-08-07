@@ -1,5 +1,8 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=2000&pause=500&color=F7F393&background=FF390000&width=435&lines=Hi!+My+name+is+Daniil;I+am+a+Unity+developer)](https://git.io/typing-svg)
 
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+
+
 - :office: Experience 2️⃣ years
 
 - :rage1: I'm developing games for android/web
