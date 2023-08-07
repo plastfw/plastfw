@@ -16,7 +16,7 @@
 ```
 Stack
 ```
-![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
+#![0](https://img.shields.io/badge/-OOP-orange?style=for-the-badge&logo=git&logoColor=white)
 ![1](https://img.shields.io/badge/-DoTween-orange?style=for-the-badge&logo=git&logoColor=white)
 ![2](https://img.shields.io/badge/-Cinemachine-orange?style=for-the-badge&logo=git&logoColor=white)
 ![3](https://img.shields.io/badge/-LINQ-orange?style=for-the-badge&logo=git&logoColor=white)
@@ -28,7 +28,7 @@ Stack
 ![10](https://img.shields.io/badge/-AdobeIllustrator-orange?style=for-the-badge&logo=git&logoColor=white)
 ___
 ```
-Last Project
+Last Projects
 ```
 [![2](https://img.shields.io/badge/-ToiletRush-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://yandex.ru/games/app/210372?draft=true&lang=ru)
 [![2](https://img.shields.io/badge/-ShootingRange-fb8f53?style=for-the-badge&logo=GooglePlay&logoColor=white)](https://www.crazygames.com/game/the-range-3d)
