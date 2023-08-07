@@ -5,11 +5,11 @@
 
 - :rage1: I'm developing games for android/web
 
-- 🧠: I'm learning HLSL, Burst, Jobs, MorpehECS, LeoECSLite
+- 🧠 I'm learning HLSL, Burst, Jobs, MorpehECS, LeoECSLite
 
-- 👯: I have experience working in a team
+- 👯 I have experience working in a team
 
-- 📫:How to reach me: [![Telegram](https://img.shields.io/badge/-plastfw-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/plastfw)
+- 📫How to reach me: [![Telegram](https://img.shields.io/badge/-plastfw-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/plastfw)
 
 ---
 
