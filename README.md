@@ -22,3 +22,5 @@ workspace
 ├── tui-apps
 └── bots
 ```
+
+<img src="assets/knight-path.svg" alt="Animated chess knight path through my stack" width="900">

@@ -1,0 +1,83 @@
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Knight path through plastfw stack</title>
+  <desc id="desc">Animated chess knight jumping through languages and focus areas: C#, Python, Go, Bash, Games, Tools, TUI, Bots.</desc>
+
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .bg { fill: #0d1117; }
+      .grid { stroke: #243041; stroke-width: 1; opacity: 0.5; }
+      .path { stroke: #39d353; stroke-width: 2; stroke-dasharray: 7 8; opacity: 0.55; }
+      .node { fill: #161b22; stroke: #7ee787; stroke-width: 2; }
+      .label { fill: #c9d1d9; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .prompt { fill: #7ee787; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .dim { fill: #6e7681; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .knight { fill: #f0f6fc; font: 42px Georgia, serif; filter: url(#glow); }
+      .trail { fill: #39d353; opacity: 0.22; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="900" height="260" rx="14"/>
+
+  <g opacity="0.45">
+    <path class="grid" d="M40 70H860"/>
+    <path class="grid" d="M40 130H860"/>
+    <path class="grid" d="M40 190H860"/>
+    <path class="grid" d="M90 35V225"/>
+    <path class="grid" d="M190 35V225"/>
+    <path class="grid" d="M290 35V225"/>
+    <path class="grid" d="M390 35V225"/>
+    <path class="grid" d="M490 35V225"/>
+    <path class="grid" d="M590 35V225"/>
+    <path class="grid" d="M690 35V225"/>
+    <path class="grid" d="M790 35V225"/>
+  </g>
+
+  <text class="prompt" x="34" y="32">plastfw@github:~$ ./knight --path stack</text>
+  <text class="dim" x="34" y="238">L-shaped moves only · terminal-first route · no templates</text>
+
+  <polyline class="path" points="90,85 210,165 330,85 450,165 570,85 690,165 810,85 750,165"/>
+
+  <g>
+    <circle class="node" cx="90" cy="85" r="30"/>
+    <text class="label" x="90" y="90" text-anchor="middle">C#</text>
+
+    <circle class="node" cx="210" cy="165" r="35"/>
+    <text class="label" x="210" y="170" text-anchor="middle">Python</text>
+
+    <circle class="node" cx="330" cy="85" r="30"/>
+    <text class="label" x="330" y="90" text-anchor="middle">Go</text>
+
+    <circle class="node" cx="450" cy="165" r="32"/>
+    <text class="label" x="450" y="170" text-anchor="middle">Bash</text>
+
+    <circle class="node" cx="570" cy="85" r="34"/>
+    <text class="label" x="570" y="90" text-anchor="middle">Games</text>
+
+    <circle class="node" cx="690" cy="165" r="33"/>
+    <text class="label" x="690" y="170" text-anchor="middle">Tools</text>
+
+    <circle class="node" cx="810" cy="85" r="30"/>
+    <text class="label" x="810" y="90" text-anchor="middle">TUI</text>
+
+    <circle class="node" cx="750" cy="165" r="30"/>
+    <text class="label" x="750" y="170" text-anchor="middle">Bots</text>
+  </g>
+
+  <g>
+    <circle class="trail" r="12">
+      <animateMotion dur="8s" repeatCount="indefinite" path="M90 85 L210 165 L330 85 L450 165 L570 85 L690 165 L810 85 L750 165 L90 85"/>
+      <animate attributeName="opacity" values="0.05;0.28;0.05" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text class="knight" text-anchor="middle" dominant-baseline="middle">♞
+      <animateMotion dur="8s" repeatCount="indefinite" path="M90 85 L210 165 L330 85 L450 165 L570 85 L690 165 L810 85 L750 165 L90 85"/>
+    </text>
+  </g>
+</svg>
