@@ -1,88 +1,628 @@
-<svg width="900" height="340" viewBox="0 0 900 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Legal Trap chess animation</title>
-  <desc id="desc">A terminal styled chess board showing the final knight move in the Legal Trap: Nd5 checkmate.</desc>
-
+<svg width="900" height="380" viewBox="0 0 900 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Legal Trap chess replay</title>
+  <desc id="desc">Animated replay of the Legal Trap chess sequence ending with 7. Nd5 checkmate.</desc>
   <defs>
     <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <style>
       .bg { fill: #0d1117; }
       .sq-dark { fill: #161b22; }
       .sq-light { fill: #1f2937; }
-      .sq-hit { fill: #244233; }
-      .grid { stroke: #30363d; stroke-width: 1; }
-      .piece { fill: #c9d1d9; font: 22px Georgia, serif; text-anchor: middle; dominant-baseline: middle; }
-      .black { fill: #8b949e; }
-      .knight { fill: #7ee787; font: 32px Georgia, serif; text-anchor: middle; dominant-baseline: middle; filter: url(#glow); }
+      .white-piece { fill: #f0f6fc; }
+      .black-piece { fill: #8b949e; }
+      .piece { font: 23px Georgia, serif; text-anchor: middle; dominant-baseline: middle; }
       .prompt { fill: #7ee787; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .text { fill: #c9d1d9; font: 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
       .dim { fill: #6e7681; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .hot { fill: #ffa657; font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .mate { fill: #ff7b72; font: 800 26px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; filter: url(#glow); }
-      .path { stroke: #7ee787; stroke-width: 2; stroke-dasharray: 5 6; opacity: 0.75; }
+      .move { fill: #8b949e; font: 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .move-hot { fill: #ffa657; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; filter: url(#glow); }
+      .status { fill: #7ee787; font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .mate { fill: #ff7b72; font: 800 28px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; filter: url(#glow); }
       .coord { fill: #6e7681; font: 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-anchor: middle; }
+      .box { fill: #0b1118; stroke: #30363d; }
     </style>
   </defs>
 
-  <rect class="bg" width="900" height="340" rx="14"/>
-  <text class="prompt" x="34" y="34">plastfw@github:~$ ./chess --legal-trap</text>
-  <text class="dim" x="34" y="314">classic trap · final move: 7. Nd5# · knight delivers mate</text>
+  <rect class="bg" width="900" height="380" rx="14"/>
+  <text class="prompt" x="34" y="34">plastfw@github:~$ ./chess --replay legal-trap</text>
+  <text class="dim" x="34" y="350">full replay · Legal Trap · final move: 7. Nd5#</text>
 
-  <!-- board -->
-  <g transform="translate(46 56)">
-    <rect x="0" y="0" width="256" height="256" rx="8" fill="#0b1118" stroke="#30363d"/>
-    <g>
-      <rect class="sq-light" x="0" y="0" width="32" height="32"/><rect class="sq-dark" x="32" y="0" width="32" height="32"/><rect class="sq-light" x="64" y="0" width="32" height="32"/><rect class="sq-dark" x="96" y="0" width="32" height="32"/><rect class="sq-light" x="128" y="0" width="32" height="32"/><rect class="sq-dark" x="160" y="0" width="32" height="32"/><rect class="sq-light" x="192" y="0" width="32" height="32"/><rect class="sq-dark" x="224" y="0" width="32" height="32"/>
-      <rect class="sq-dark" x="0" y="32" width="32" height="32"/><rect class="sq-light" x="32" y="32" width="32" height="32"/><rect class="sq-dark" x="64" y="32" width="32" height="32"/><rect class="sq-light" x="96" y="32" width="32" height="32"/><rect class="sq-dark" x="128" y="32" width="32" height="32"/><rect class="sq-light" x="160" y="32" width="32" height="32"/><rect class="sq-dark" x="192" y="32" width="32" height="32"/><rect class="sq-light" x="224" y="32" width="32" height="32"/>
-      <rect class="sq-light" x="0" y="64" width="32" height="32"/><rect class="sq-dark" x="32" y="64" width="32" height="32"/><rect class="sq-light" x="64" y="64" width="32" height="32"/><rect class="sq-dark" x="96" y="64" width="32" height="32"/><rect class="sq-light" x="128" y="64" width="32" height="32"/><rect class="sq-dark" x="160" y="64" width="32" height="32"/><rect class="sq-light" x="192" y="64" width="32" height="32"/><rect class="sq-dark" x="224" y="64" width="32" height="32"/>
-      <rect class="sq-dark" x="0" y="96" width="32" height="32"/><rect class="sq-light" x="32" y="96" width="32" height="32"/><rect class="sq-dark" x="64" y="96" width="32" height="32"/><rect class="sq-hit" x="96" y="96" width="32" height="32"/><rect class="sq-dark" x="128" y="96" width="32" height="32"/><rect class="sq-light" x="160" y="96" width="32" height="32"/><rect class="sq-dark" x="192" y="96" width="32" height="32"/><rect class="sq-light" x="224" y="96" width="32" height="32"/>
-      <rect class="sq-light" x="0" y="128" width="32" height="32"/><rect class="sq-dark" x="32" y="128" width="32" height="32"/><rect class="sq-light" x="64" y="128" width="32" height="32"/><rect class="sq-dark" x="96" y="128" width="32" height="32"/><rect class="sq-light" x="128" y="128" width="32" height="32"/><rect class="sq-dark" x="160" y="128" width="32" height="32"/><rect class="sq-light" x="192" y="128" width="32" height="32"/><rect class="sq-dark" x="224" y="128" width="32" height="32"/>
-      <rect class="sq-dark" x="0" y="160" width="32" height="32"/><rect class="sq-light" x="32" y="160" width="32" height="32"/><rect class="sq-hit" x="64" y="160" width="32" height="32"/><rect class="sq-light" x="96" y="160" width="32" height="32"/><rect class="sq-dark" x="128" y="160" width="32" height="32"/><rect class="sq-light" x="160" y="160" width="32" height="32"/><rect class="sq-dark" x="192" y="160" width="32" height="32"/><rect class="sq-light" x="224" y="160" width="32" height="32"/>
-      <rect class="sq-light" x="0" y="192" width="32" height="32"/><rect class="sq-dark" x="32" y="192" width="32" height="32"/><rect class="sq-light" x="64" y="192" width="32" height="32"/><rect class="sq-dark" x="96" y="192" width="32" height="32"/><rect class="sq-light" x="128" y="192" width="32" height="32"/><rect class="sq-dark" x="160" y="192" width="32" height="32"/><rect class="sq-light" x="192" y="192" width="32" height="32"/><rect class="sq-dark" x="224" y="192" width="32" height="32"/>
-      <rect class="sq-dark" x="0" y="224" width="32" height="32"/><rect class="sq-light" x="32" y="224" width="32" height="32"/><rect class="sq-dark" x="64" y="224" width="32" height="32"/><rect class="sq-light" x="96" y="224" width="32" height="32"/><rect class="sq-dark" x="128" y="224" width="32" height="32"/><rect class="sq-light" x="160" y="224" width="32" height="32"/><rect class="sq-dark" x="192" y="224" width="32" height="32"/><rect class="sq-light" x="224" y="224" width="32" height="32"/>
-    </g>
+  <g transform="translate(0 0)">
+<rect x="46" y="56" width="260" height="260" rx="10" fill="#0b1118" stroke="#30363d"/>
+<rect class="sq-light" x="48" y="58" width="32" height="32"/>
+<rect class="sq-dark" x="80" y="58" width="32" height="32"/>
+<rect class="sq-light" x="112" y="58" width="32" height="32"/>
+<rect class="sq-dark" x="144" y="58" width="32" height="32"/>
+<rect class="sq-light" x="176" y="58" width="32" height="32"/>
+<rect class="sq-dark" x="208" y="58" width="32" height="32"/>
+<rect class="sq-light" x="240" y="58" width="32" height="32"/>
+<rect class="sq-dark" x="272" y="58" width="32" height="32"/>
+<rect class="sq-dark" x="48" y="90" width="32" height="32"/>
+<rect class="sq-light" x="80" y="90" width="32" height="32"/>
+<rect class="sq-dark" x="112" y="90" width="32" height="32"/>
+<rect class="sq-light" x="144" y="90" width="32" height="32"/>
+<rect class="sq-dark" x="176" y="90" width="32" height="32"/>
+<rect class="sq-light" x="208" y="90" width="32" height="32"/>
+<rect class="sq-dark" x="240" y="90" width="32" height="32"/>
+<rect class="sq-light" x="272" y="90" width="32" height="32"/>
+<rect class="sq-light" x="48" y="122" width="32" height="32"/>
+<rect class="sq-dark" x="80" y="122" width="32" height="32"/>
+<rect class="sq-light" x="112" y="122" width="32" height="32"/>
+<rect class="sq-dark" x="144" y="122" width="32" height="32"/>
+<rect class="sq-light" x="176" y="122" width="32" height="32"/>
+<rect class="sq-dark" x="208" y="122" width="32" height="32"/>
+<rect class="sq-light" x="240" y="122" width="32" height="32"/>
+<rect class="sq-dark" x="272" y="122" width="32" height="32"/>
+<rect class="sq-dark" x="48" y="154" width="32" height="32"/>
+<rect class="sq-light" x="80" y="154" width="32" height="32"/>
+<rect class="sq-dark" x="112" y="154" width="32" height="32"/>
+<rect class="sq-light" x="144" y="154" width="32" height="32"/>
+<rect class="sq-dark" x="176" y="154" width="32" height="32"/>
+<rect class="sq-light" x="208" y="154" width="32" height="32"/>
+<rect class="sq-dark" x="240" y="154" width="32" height="32"/>
+<rect class="sq-light" x="272" y="154" width="32" height="32"/>
+<rect class="sq-light" x="48" y="186" width="32" height="32"/>
+<rect class="sq-dark" x="80" y="186" width="32" height="32"/>
+<rect class="sq-light" x="112" y="186" width="32" height="32"/>
+<rect class="sq-dark" x="144" y="186" width="32" height="32"/>
+<rect class="sq-light" x="176" y="186" width="32" height="32"/>
+<rect class="sq-dark" x="208" y="186" width="32" height="32"/>
+<rect class="sq-light" x="240" y="186" width="32" height="32"/>
+<rect class="sq-dark" x="272" y="186" width="32" height="32"/>
+<rect class="sq-dark" x="48" y="218" width="32" height="32"/>
+<rect class="sq-light" x="80" y="218" width="32" height="32"/>
+<rect class="sq-dark" x="112" y="218" width="32" height="32"/>
+<rect class="sq-light" x="144" y="218" width="32" height="32"/>
+<rect class="sq-dark" x="176" y="218" width="32" height="32"/>
+<rect class="sq-light" x="208" y="218" width="32" height="32"/>
+<rect class="sq-dark" x="240" y="218" width="32" height="32"/>
+<rect class="sq-light" x="272" y="218" width="32" height="32"/>
+<rect class="sq-light" x="48" y="250" width="32" height="32"/>
+<rect class="sq-dark" x="80" y="250" width="32" height="32"/>
+<rect class="sq-light" x="112" y="250" width="32" height="32"/>
+<rect class="sq-dark" x="144" y="250" width="32" height="32"/>
+<rect class="sq-light" x="176" y="250" width="32" height="32"/>
+<rect class="sq-dark" x="208" y="250" width="32" height="32"/>
+<rect class="sq-light" x="240" y="250" width="32" height="32"/>
+<rect class="sq-dark" x="272" y="250" width="32" height="32"/>
+<rect class="sq-dark" x="48" y="282" width="32" height="32"/>
+<rect class="sq-light" x="80" y="282" width="32" height="32"/>
+<rect class="sq-dark" x="112" y="282" width="32" height="32"/>
+<rect class="sq-light" x="144" y="282" width="32" height="32"/>
+<rect class="sq-dark" x="176" y="282" width="32" height="32"/>
+<rect class="sq-light" x="208" y="282" width="32" height="32"/>
+<rect class="sq-dark" x="240" y="282" width="32" height="32"/>
+<rect class="sq-light" x="272" y="282" width="32" height="32"/>
+<text class="coord" x="64.0" y="332">a</text>
+<text class="coord" x="96.0" y="332">b</text>
+<text class="coord" x="128.0" y="332">c</text>
+<text class="coord" x="160.0" y="332">d</text>
+<text class="coord" x="192.0" y="332">e</text>
+<text class="coord" x="224.0" y="332">f</text>
+<text class="coord" x="256.0" y="332">g</text>
+<text class="coord" x="288.0" y="332">h</text>
+<text class="coord" x="34" y="78.0">8</text>
+<text class="coord" x="34" y="110.0">7</text>
+<text class="coord" x="34" y="142.0">6</text>
+<text class="coord" x="34" y="174.0">5</text>
+<text class="coord" x="34" y="206.0">4</text>
+<text class="coord" x="34" y="238.0">3</text>
+<text class="coord" x="34" y="270.0">2</text>
+<text class="coord" x="34" y="302.0">1</text>
+</g>
+  <g opacity="0"><animate attributeName="opacity" values="1;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="128.0" y="74.0">♝</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="266.0">♙</text>
+<text class="piece black-piece" x="192.0" y="106.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="298.0">♗</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="298.0">♘</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="128.0" y="74.0">♝</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="106.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="298.0">♗</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="298.0">♘</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="128.0" y="74.0">♝</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="298.0">♗</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="298.0">♘</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;1;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="128.0" y="74.0">♝</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="298.0">♗</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="234.0">♘</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;1;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="128.0" y="74.0">♝</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="298.0">♗</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="234.0">♘</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;1;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="202.0">♗</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="128.0" y="74.0">♝</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="234.0">♘</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;1;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="298.0">♘</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="202.0">♗</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="234.0">♘</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="202.0">♝</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;1;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="234.0">♘</text>
+<text class="piece white-piece" x="128.0" y="202.0">♗</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="234.0">♘</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="202.0">♝</text>
+<text class="piece black-piece" x="256.0" y="106.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="234.0">♘</text>
+<text class="piece white-piece" x="128.0" y="202.0">♗</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece black-piece" x="192.0" y="170.0">♟</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="234.0">♘</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="202.0">♝</text>
+<text class="piece black-piece" x="256.0" y="138.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="234.0">♘</text>
+<text class="piece white-piece" x="128.0" y="202.0">♗</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece white-piece" x="160.0" y="298.0">♕</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece white-piece" x="192.0" y="170.0">♘</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="202.0">♝</text>
+<text class="piece black-piece" x="256.0" y="138.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="234.0">♘</text>
+<text class="piece white-piece" x="128.0" y="202.0">♗</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="298.0">♝</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece white-piece" x="192.0" y="170.0">♘</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece black-piece" x="224.0" y="106.0">♟</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="138.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;1;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="234.0">♘</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="298.0">♝</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece white-piece" x="192.0" y="170.0">♘</text>
+<text class="piece black-piece" x="192.0" y="74.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="106.0">♗</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="138.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece white-piece" x="128.0" y="234.0">♘</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="298.0">♝</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece white-piece" x="192.0" y="170.0">♘</text>
+<text class="piece black-piece" x="192.0" y="106.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="106.0">♗</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="138.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;1" dur="14s" repeatCount="indefinite" calcMode="discrete"/>
+<text class="piece white-piece" x="64.0" y="298.0">♖</text>
+<text class="piece white-piece" x="64.0" y="266.0">♙</text>
+<text class="piece black-piece" x="64.0" y="106.0">♟</text>
+<text class="piece black-piece" x="64.0" y="74.0">♜</text>
+<text class="piece white-piece" x="96.0" y="266.0">♙</text>
+<text class="piece black-piece" x="96.0" y="106.0">♟</text>
+<text class="piece black-piece" x="96.0" y="74.0">♞</text>
+<text class="piece white-piece" x="128.0" y="298.0">♗</text>
+<text class="piece white-piece" x="128.0" y="266.0">♙</text>
+<text class="piece black-piece" x="128.0" y="106.0">♟</text>
+<text class="piece black-piece" x="160.0" y="298.0">♝</text>
+<text class="piece white-piece" x="160.0" y="266.0">♙</text>
+<text class="piece white-piece" x="160.0" y="170.0">♘</text>
+<text class="piece black-piece" x="160.0" y="138.0">♟</text>
+<text class="piece black-piece" x="160.0" y="74.0">♛</text>
+<text class="piece white-piece" x="192.0" y="298.0">♔</text>
+<text class="piece white-piece" x="192.0" y="202.0">♙</text>
+<text class="piece white-piece" x="192.0" y="170.0">♘</text>
+<text class="piece black-piece" x="192.0" y="106.0">♚</text>
+<text class="piece white-piece" x="224.0" y="266.0">♙</text>
+<text class="piece white-piece" x="224.0" y="106.0">♗</text>
+<text class="piece black-piece" x="224.0" y="74.0">♝</text>
+<text class="piece white-piece" x="256.0" y="266.0">♙</text>
+<text class="piece black-piece" x="256.0" y="138.0">♟</text>
+<text class="piece black-piece" x="256.0" y="74.0">♞</text>
+<text class="piece white-piece" x="288.0" y="298.0">♖</text>
+<text class="piece white-piece" x="288.0" y="266.0">♙</text>
+<text class="piece black-piece" x="288.0" y="106.0">♟</text>
+<text class="piece black-piece" x="288.0" y="74.0">♜</text>
+</g>
 
-    <path class="path" d="M80 176 L112 112"/>
-    <text class="piece black" x="144" y="48">♚</text>
-    <text class="piece black" x="96" y="224">♝</text>
-    <text class="piece" x="176" y="48">♗</text>
-    <text class="piece" x="128" y="240">♔</text>
-    <text class="piece" x="96" y="240">♖</text>
-    <text class="piece" x="160" y="240">♖</text>
-    <text class="knight" text-anchor="middle" dominant-baseline="middle">♞
-      <animateMotion dur="3.2s" repeatCount="indefinite" path="M80 176 L112 112 L112 112 L80 176" keyTimes="0;0.42;0.72;1"/>
-    </text>
+  <rect class="box" x="340" y="56" width="220" height="214" rx="10"/>
+  <text class="prompt" x="360" y="36">moves.pgn</text>
+  <text class="move" x="360" y="82">1. e4</text>
+<text class="move-hot" x="360" y="82" opacity="0">1. e4<animate attributeName="opacity" values="0;1;0;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="360" y="108">1... e5</text>
+<text class="move-hot" x="360" y="108" opacity="0">1... e5<animate attributeName="opacity" values="0;0;1;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="360" y="134">2. Nf3</text>
+<text class="move-hot" x="360" y="134" opacity="0">2. Nf3<animate attributeName="opacity" values="0;0;0;1;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="360" y="160">2... d6</text>
+<text class="move-hot" x="360" y="160" opacity="0">2... d6<animate attributeName="opacity" values="0;0;0;0;1;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="360" y="186">3. Bc4</text>
+<text class="move-hot" x="360" y="186" opacity="0">3. Bc4<animate attributeName="opacity" values="0;0;0;0;0;1;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="360" y="212">3... Bg4</text>
+<text class="move-hot" x="360" y="212" opacity="0">3... Bg4<animate attributeName="opacity" values="0;0;0;0;0;0;1;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="360" y="238">4. Nc3</text>
+<text class="move-hot" x="360" y="238" opacity="0">4. Nc3<animate attributeName="opacity" values="0;0;0;0;0;0;0;1;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="505" y="82">4... g6</text>
+<text class="move-hot" x="505" y="82" opacity="0">4... g6<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="505" y="108">5. Nxe5</text>
+<text class="move-hot" x="505" y="108" opacity="0">5. Nxe5<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="505" y="134">5... Bxd1</text>
+<text class="move-hot" x="505" y="134" opacity="0">5... Bxd1<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="505" y="160">6. Bxf7+</text>
+<text class="move-hot" x="505" y="160" opacity="0">6. Bxf7+<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;1;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="505" y="186">6... Ke7</text>
+<text class="move-hot" x="505" y="186" opacity="0">6... Ke7<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="move" x="505" y="212">7. Nd5#</text>
+<text class="move-hot" x="505" y="212" opacity="0">7. Nd5#<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;1" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
 
-    <text class="coord" x="16" y="272">a</text><text class="coord" x="48" y="272">b</text><text class="coord" x="80" y="272">c</text><text class="coord" x="112" y="272">d</text><text class="coord" x="144" y="272">e</text><text class="coord" x="176" y="272">f</text><text class="coord" x="208" y="272">g</text><text class="coord" x="240" y="272">h</text>
-  </g>
-
-  <!-- move list -->
-  <g transform="translate(350 76)">
-    <text class="text" x="0" y="0">1. e4 e5</text>
-    <text class="text" x="0" y="26">2. Nf3 d6</text>
-    <text class="text" x="0" y="52">3. Bc4 Bg4</text>
-    <text class="text" x="0" y="78">4. Nc3 g6</text>
-    <text class="text" x="0" y="104">5. Nxe5 Bxd1</text>
-    <text class="text" x="0" y="130">6. Bxf7+ Ke7</text>
-    <text class="hot" x="0" y="160">7. Nd5#</text>
-
-    <text class="mate" x="0" y="212">CHECKMATE</text>
-    <text class="mate" x="0" y="212" opacity="0">
-      CHECKMATE
-      <animate attributeName="opacity" values="0;1;0" dur="1.6s" repeatCount="indefinite"/>
-    </text>
-  </g>
-
-  <g transform="translate(610 90)">
-    <text class="dim" x="0" y="0">analysis</text>
-    <text class="text" x="0" y="30">white sacrifices queen</text>
-    <text class="text" x="0" y="56">bishop pulls king out</text>
-    <text class="text" x="0" y="82">knight lands on d5</text>
-    <text class="hot" x="0" y="118">status: shipped</text>
-  </g>
+  <rect class="box" x="590" y="56" width="260" height="214" rx="10"/>
+  <text class="prompt" x="610" y="84">engine</text>
+  <text class="status" x="610" y="108" opacity="0">move: start<animate attributeName="opacity" values="1;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 1. e4<animate attributeName="opacity" values="0;1;0;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 1... e5<animate attributeName="opacity" values="0;0;1;0;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 2. Nf3<animate attributeName="opacity" values="0;0;0;1;0;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 2... d6<animate attributeName="opacity" values="0;0;0;0;1;0;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 3. Bc4<animate attributeName="opacity" values="0;0;0;0;0;1;0;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 3... Bg4<animate attributeName="opacity" values="0;0;0;0;0;0;1;0;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 4. Nc3<animate attributeName="opacity" values="0;0;0;0;0;0;0;1;0;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 4... g6<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;0;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 5. Nxe5<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;0;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 5... Bxd1<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;0;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 6. Bxf7+<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;1;0;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 6... Ke7<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;0" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+<text class="status" x="610" y="108" opacity="0">move: 7. Nd5#<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;1" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
+  <text class="dim" x="610" y="142">queen sacrifice accepted</text>
+  <text class="dim" x="610" y="168">king dragged to e7</text>
+  <text class="dim" x="610" y="194">knight fork becomes mate</text>
+  <text class="mate" x="610" y="236" opacity="0">CHECKMATE<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;1" dur="14s" repeatCount="indefinite" calcMode="discrete"/></text>
 </svg>
