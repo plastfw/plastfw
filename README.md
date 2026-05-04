@@ -1,3 +1,24 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=2000&pause=500&color=F7F393&background=FF390000&width=435&lines=Hi!+My+name+is+Daniil;I+am+a+Unity+developer)](https://git.io/typing-svg)
+```text
+          _           _    __
+    _ __ | | __ _ ___| |_ / _|_      __
+   | '_ \| |/ _` / __| __| |_\ \ /\ / /
+   | |_) | | (_| \__ \ |_|  _|\ V  V /
+   | .__/|_|\__,_|___/\__|_|   \_/\_/
+   |_|
 
-![Waluigi](https://octodex.github.com/images/spidertocat.png)
+plastfw@github:~$ cat ~/about.txt
+
+role       developer
+languages  C# / Python / Go / Bash
+focus      games / tools / utilities / TUI apps / bots
+approach   practical software, small tools, terminal-first workflows
+
+plastfw@github:~$ tree ~/workspace
+
+workspace
+├── games
+├── tools
+├── utilities
+├── tui-apps
+└── bots
+```
