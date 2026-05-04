@@ -22,5 +22,3 @@ workspace
 ├── tui-apps
 └── bots
 ```
-
-<img src="assets/legal-trap.svg" alt="Animated Legal Trap chess checkmate" width="900">
