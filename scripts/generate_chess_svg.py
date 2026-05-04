@@ -85,21 +85,6 @@ def render_state_pieces():
         out.append('</g>')
     return "\n".join(out)
 
-
-def render_move_list():
-    out = []
-    for i, (move, _, _) in enumerate(moves, start=1):
-        x = 360 + (0 if i <= 7 else 145)
-        y = 82 + ((i - 1) % 7) * 26
-        vals = ["0"] * len(states)
-        vals[i] = "1"
-        if i == len(moves):
-            vals[-1] = "1"
-        out.append(f'<text class="move" x="{x}" y="{y}">{escape(move)}</text>')
-        out.append(f'<text class="move-hot" x="{x}" y="{y}" opacity="0">{escape(move)}{visibility(";".join(vals))}</text>')
-    return "\n".join(out)
-
-
 def render_current_move():
     labels = ["start"] + [m[0] for m in moves]
     out = []
