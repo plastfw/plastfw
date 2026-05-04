@@ -24,5 +24,3 @@ workspace
 ```
 
 <img src="assets/knight-path.svg" alt="Animated chess knight path through my stack" width="900">
-
-<img src="assets/legal-trap.svg" alt="Animated Legal Trap chess checkmate" width="900">
