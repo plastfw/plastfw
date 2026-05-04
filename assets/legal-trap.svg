@@ -1,0 +1,88 @@
+<svg width="900" height="340" viewBox="0 0 900 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Legal Trap chess animation</title>
+  <desc id="desc">A terminal styled chess board showing the final knight move in the Legal Trap: Nd5 checkmate.</desc>
+
+  <defs>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .bg { fill: #0d1117; }
+      .sq-dark { fill: #161b22; }
+      .sq-light { fill: #1f2937; }
+      .sq-hit { fill: #244233; }
+      .grid { stroke: #30363d; stroke-width: 1; }
+      .piece { fill: #c9d1d9; font: 22px Georgia, serif; text-anchor: middle; dominant-baseline: middle; }
+      .black { fill: #8b949e; }
+      .knight { fill: #7ee787; font: 32px Georgia, serif; text-anchor: middle; dominant-baseline: middle; filter: url(#glow); }
+      .prompt { fill: #7ee787; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .text { fill: #c9d1d9; font: 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .dim { fill: #6e7681; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .hot { fill: #ffa657; font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .mate { fill: #ff7b72; font: 800 26px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; filter: url(#glow); }
+      .path { stroke: #7ee787; stroke-width: 2; stroke-dasharray: 5 6; opacity: 0.75; }
+      .coord { fill: #6e7681; font: 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="340" rx="14"/>
+  <text class="prompt" x="34" y="34">plastfw@github:~$ ./chess --legal-trap</text>
+  <text class="dim" x="34" y="314">classic trap · final move: 7. Nd5# · knight delivers mate</text>
+
+  <!-- board -->
+  <g transform="translate(46 56)">
+    <rect x="0" y="0" width="256" height="256" rx="8" fill="#0b1118" stroke="#30363d"/>
+    <g>
+      <rect class="sq-light" x="0" y="0" width="32" height="32"/><rect class="sq-dark" x="32" y="0" width="32" height="32"/><rect class="sq-light" x="64" y="0" width="32" height="32"/><rect class="sq-dark" x="96" y="0" width="32" height="32"/><rect class="sq-light" x="128" y="0" width="32" height="32"/><rect class="sq-dark" x="160" y="0" width="32" height="32"/><rect class="sq-light" x="192" y="0" width="32" height="32"/><rect class="sq-dark" x="224" y="0" width="32" height="32"/>
+      <rect class="sq-dark" x="0" y="32" width="32" height="32"/><rect class="sq-light" x="32" y="32" width="32" height="32"/><rect class="sq-dark" x="64" y="32" width="32" height="32"/><rect class="sq-light" x="96" y="32" width="32" height="32"/><rect class="sq-dark" x="128" y="32" width="32" height="32"/><rect class="sq-light" x="160" y="32" width="32" height="32"/><rect class="sq-dark" x="192" y="32" width="32" height="32"/><rect class="sq-light" x="224" y="32" width="32" height="32"/>
+      <rect class="sq-light" x="0" y="64" width="32" height="32"/><rect class="sq-dark" x="32" y="64" width="32" height="32"/><rect class="sq-light" x="64" y="64" width="32" height="32"/><rect class="sq-dark" x="96" y="64" width="32" height="32"/><rect class="sq-light" x="128" y="64" width="32" height="32"/><rect class="sq-dark" x="160" y="64" width="32" height="32"/><rect class="sq-light" x="192" y="64" width="32" height="32"/><rect class="sq-dark" x="224" y="64" width="32" height="32"/>
+      <rect class="sq-dark" x="0" y="96" width="32" height="32"/><rect class="sq-light" x="32" y="96" width="32" height="32"/><rect class="sq-dark" x="64" y="96" width="32" height="32"/><rect class="sq-hit" x="96" y="96" width="32" height="32"/><rect class="sq-dark" x="128" y="96" width="32" height="32"/><rect class="sq-light" x="160" y="96" width="32" height="32"/><rect class="sq-dark" x="192" y="96" width="32" height="32"/><rect class="sq-light" x="224" y="96" width="32" height="32"/>
+      <rect class="sq-light" x="0" y="128" width="32" height="32"/><rect class="sq-dark" x="32" y="128" width="32" height="32"/><rect class="sq-light" x="64" y="128" width="32" height="32"/><rect class="sq-dark" x="96" y="128" width="32" height="32"/><rect class="sq-light" x="128" y="128" width="32" height="32"/><rect class="sq-dark" x="160" y="128" width="32" height="32"/><rect class="sq-light" x="192" y="128" width="32" height="32"/><rect class="sq-dark" x="224" y="128" width="32" height="32"/>
+      <rect class="sq-dark" x="0" y="160" width="32" height="32"/><rect class="sq-light" x="32" y="160" width="32" height="32"/><rect class="sq-hit" x="64" y="160" width="32" height="32"/><rect class="sq-light" x="96" y="160" width="32" height="32"/><rect class="sq-dark" x="128" y="160" width="32" height="32"/><rect class="sq-light" x="160" y="160" width="32" height="32"/><rect class="sq-dark" x="192" y="160" width="32" height="32"/><rect class="sq-light" x="224" y="160" width="32" height="32"/>
+      <rect class="sq-light" x="0" y="192" width="32" height="32"/><rect class="sq-dark" x="32" y="192" width="32" height="32"/><rect class="sq-light" x="64" y="192" width="32" height="32"/><rect class="sq-dark" x="96" y="192" width="32" height="32"/><rect class="sq-light" x="128" y="192" width="32" height="32"/><rect class="sq-dark" x="160" y="192" width="32" height="32"/><rect class="sq-light" x="192" y="192" width="32" height="32"/><rect class="sq-dark" x="224" y="192" width="32" height="32"/>
+      <rect class="sq-dark" x="0" y="224" width="32" height="32"/><rect class="sq-light" x="32" y="224" width="32" height="32"/><rect class="sq-dark" x="64" y="224" width="32" height="32"/><rect class="sq-light" x="96" y="224" width="32" height="32"/><rect class="sq-dark" x="128" y="224" width="32" height="32"/><rect class="sq-light" x="160" y="224" width="32" height="32"/><rect class="sq-dark" x="192" y="224" width="32" height="32"/><rect class="sq-light" x="224" y="224" width="32" height="32"/>
+    </g>
+
+    <path class="path" d="M80 176 L112 112"/>
+    <text class="piece black" x="144" y="48">♚</text>
+    <text class="piece black" x="96" y="224">♝</text>
+    <text class="piece" x="176" y="48">♗</text>
+    <text class="piece" x="128" y="240">♔</text>
+    <text class="piece" x="96" y="240">♖</text>
+    <text class="piece" x="160" y="240">♖</text>
+    <text class="knight" text-anchor="middle" dominant-baseline="middle">♞
+      <animateMotion dur="3.2s" repeatCount="indefinite" path="M80 176 L112 112 L112 112 L80 176" keyTimes="0;0.42;0.72;1"/>
+    </text>
+
+    <text class="coord" x="16" y="272">a</text><text class="coord" x="48" y="272">b</text><text class="coord" x="80" y="272">c</text><text class="coord" x="112" y="272">d</text><text class="coord" x="144" y="272">e</text><text class="coord" x="176" y="272">f</text><text class="coord" x="208" y="272">g</text><text class="coord" x="240" y="272">h</text>
+  </g>
+
+  <!-- move list -->
+  <g transform="translate(350 76)">
+    <text class="text" x="0" y="0">1. e4 e5</text>
+    <text class="text" x="0" y="26">2. Nf3 d6</text>
+    <text class="text" x="0" y="52">3. Bc4 Bg4</text>
+    <text class="text" x="0" y="78">4. Nc3 g6</text>
+    <text class="text" x="0" y="104">5. Nxe5 Bxd1</text>
+    <text class="text" x="0" y="130">6. Bxf7+ Ke7</text>
+    <text class="hot" x="0" y="160">7. Nd5#</text>
+
+    <text class="mate" x="0" y="212">CHECKMATE</text>
+    <text class="mate" x="0" y="212" opacity="0">
+      CHECKMATE
+      <animate attributeName="opacity" values="0;1;0" dur="1.6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <g transform="translate(610 90)">
+    <text class="dim" x="0" y="0">analysis</text>
+    <text class="text" x="0" y="30">white sacrifices queen</text>
+    <text class="text" x="0" y="56">bishop pulls king out</text>
+    <text class="text" x="0" y="82">knight lands on d5</text>
+    <text class="hot" x="0" y="118">status: shipped</text>
+  </g>
+</svg>
